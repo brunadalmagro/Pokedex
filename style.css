@@ -1,0 +1,125 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #00685ad0;
+    color: #101601;
+}
+
+body.modo-escuro{
+    /*variaveis no css para estilizar o modo escuro*/
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;   
+}
+
+header .logo,
+header .image-botton {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #boton-change-theme{
+    border: none;
+    background: none;
+}
+
+header .image-botton:hover,
+header .logo:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .list-pokemon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+main .cartao-pokemon{
+    background-color: #14d665e5;
+    width: 200px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+main .cartao-pokemon:hover {
+    background-color: #4fb3f7ab;
+}
+
+.modo-escuro .cartao-pokemon:hover {
+    background-color: #077419;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #3333;
+    border-radius: 10px;
+    border-bottom: #058017;
+    border-style:groove;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.grama {
+    background-color: #68ff11;
+}
+
+.veneno {
+    background-color: #df67ddfb;
+}
+
+.fogo {
+    background-color: #ec6e0d;
+}
+
+.Água {
+    background-color: #0decfc;
+}
+
+.Inseto {
+    background-color: #c7df13;
+}
+
+main .descricao {
+    max-height: 80px;
+    font-size: 14px;
+    padding-right: 10px;
+    overflow-y: scroll;
+}
+
